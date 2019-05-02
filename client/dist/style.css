@@ -1,0 +1,26 @@
+#main{
+    justify-content: center;
+}
+
+#chat{
+    font-family: sans-serif;
+    border-style: solid;
+    max-width: 800px;
+    max-height: 300px;
+    margin: auto;
+    overflow-y: auto;
+    border-radius: 15px !important;
+    padding: 10px;
+}
+
+.message{
+    background-color: antiquewhite;
+    margin: 5px;
+    padding: 5px;
+    font-size: 90%;
+    border-radius: 5px;
+}
+
+.userName{
+    font-weight: bold;
+}
