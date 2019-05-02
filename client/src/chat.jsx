@@ -13,11 +13,13 @@ class Chat extends React.Component {
     render(){
         return(<div id="chat">
         {/* render a message component for each element in the messages prop*/}
+        <div id="wordBox">
             {this.props.messages.map((message)=>{return(
                 <Message message={message}/>
             )})}
             <div id="mark"/>{/* target for automatic scrolling. used in onComponentDidMount in messages.jsx */}
-            <Submit/>
+        </div>
+            <Submit userName={this.props.userName}/>
         </div>)
     }
 };

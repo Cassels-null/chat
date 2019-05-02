@@ -3,19 +3,26 @@ import ReactDOM from 'react-dom';
 import axios from 'axios';
 
 import Chat from './chat.jsx';
+import SignIn from './signIn.jsx';
 
 //normal react setup
 class App extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            messages: []
+            messages: [],
+            userName: ""
         };
+        this.changeUserName = this.changeUserName.bind(this);
     }
 
     //initialize the update function
     componentDidMount(){
         this.update();
+    }
+
+    changeUserName(name){
+        this.setState({userName: name});
     }
 
     //get messages from server and sets them to state
@@ -28,6 +35,8 @@ class App extends React.Component {
 
     render(){
         return(<div id="master">
+        <SignIn changeUserName={this.changeUserName} userName={this.state.userName} messages={this.state.messages}/>
+{/*         
         <Chat messages={this.state.messages}/>{/* render the app UI */}
         </div>)
     }
