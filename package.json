@@ -12,9 +12,12 @@
     "@babel/core": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
     "@babel/preset-react": "^7.0.0",
+    "axios": "^0.18.0",
     "babel-loader": "^8.0.5",
     "express": "^4.16.4",
     "mongoose": "^5.5.5",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "webpack": "^4.30.0"
   }
 }
