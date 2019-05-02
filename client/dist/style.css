@@ -24,3 +24,14 @@
 .userName{
     font-weight: bold;
 }
+
+#submit{
+    /* border-style: solid; */
+    padding: 5px;
+    padding-right: 15px;
+}
+
+#textInput{
+    /* padding: 10px; */
+    width: 99%;
+}
