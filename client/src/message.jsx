@@ -1,4 +1,5 @@
 import React from 'react';
+var ColorHash = require('color-hash');
 
 //react setup
 class Message extends React.Component {
@@ -12,9 +13,12 @@ class Message extends React.Component {
     }
 
     render(){
+        var colorHash = new ColorHash();
         return(
         <div className="wrapper">
-        <span className="userName">{this.props.message.userName}</span>
+        <span className="userName"
+        style={{'background-color': colorHash.hex(this.props.message.userName)}}
+        >{this.props.message.userName}</span>
         <br/>
         <div className="message">
             {/* <br/> */}

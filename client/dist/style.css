@@ -7,7 +7,7 @@ body{
 }
 
 #chat{
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.2);
     font-family: sans-serif;
     border-style: solid;
     max-width: 800px;
@@ -15,7 +15,7 @@ body{
     margin: auto;
     margin-top: 30px;
     border-radius: 15px !important;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 #wordBox{
@@ -44,7 +44,7 @@ body{
 }
 
 .userName{
-    background-color: rgb(132, 144, 250);
+    /* background-color: rgb(132, 144, 250); */
     font-weight: bold;
     padding: 5px;
     padding-bottom: 0px;
@@ -57,6 +57,14 @@ body{
 
 .text{
     /* padding-left: 20px; */
+}
+
+#showUser{
+    border-style: solid;
+    border-width: 0px;
+    border-bottom-width: 1px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 
 #submit{
