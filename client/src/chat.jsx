@@ -14,18 +14,21 @@ class Chat extends React.Component {
     render(){
         var colorHash = new ColorHash();
 
-        return(<div id="chat">
-        <div id="showUser">
-            <span style={{'color': colorHash.hex(this.props.userName)}}>●</span>
-            {this.props.userName}
-        </div>
-        {/* render a message component for each element in the messages prop*/}
-        <div id="wordBox">
-            {this.props.messages.map((message)=>{return(
-                <Message message={message}/>
-            )})}
-            <div id="mark"/>{/* target for automatic scrolling. used in onComponentDidMount in messages.jsx */}
-        </div>
+        return(
+        <div id="chat">
+            {/* header that shows current username and color */}
+            <div id="showUser">
+                <span style={{'color': colorHash.hex(this.props.userName)}}>●</span>
+                {this.props.userName}
+            </div>
+            {/* render a message component for each element in the messages prop*/}
+            <div id="wordBox">
+                {this.props.messages.map((message)=>{return(
+                    <Message message={message}/>
+                )})}
+                <div id="mark"/>{/* target for automatic scrolling. used in onComponentDidMount in messages.jsx */}
+            </div>
+            {/* text input to post new messages */}
             <Submit userName={this.props.userName}/>
         </div>)
     }

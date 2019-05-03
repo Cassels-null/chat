@@ -8,25 +8,30 @@ class Message extends React.Component {
         this.state = {};
     }
 
-    componentDidMount(){//scroll down when a new message appears
+    componentDidMount(){//scroll to bottom of chat. called when a new message is posted
         document.getElementById("mark").scrollIntoView();
     }
 
     render(){
+        //varible declaration
         var colorHash = new ColorHash();
-        var date = new Date(this.props.message.time);
+        const date = new Date(this.props.message.time);
+
         return(
         <div className="wrapper">
+            {/* display username with personal colour */}
             <span className="userName"
-            style={{'background-color': colorHash.hex(this.props.message.userName)}}
-            >{this.props.message.userName}</span>
-
+            style={{'background-color': colorHash.hex(this.props.message.userName)}}>
+            {this.props.message.userName}</span>
             <br/>
+            {/* text content of message */}
             <div className="message">
-                {/* <br/> */}
                 <span className="text">{this.props.message.text}</span>
             </div>
-            <div className="timeStamp">{date.getMonth()}/{date.getDate()} {date.getHours()}:{date.getMinutes()}</div>
+            {/* display timestamp in "mm/dd hr:min" format */}
+            <div className="timeStamp">
+                {date.getMonth()}/{date.getDate()} {date.getHours()}:{date.getMinutes()}
+            </div>
             <br/>
         </div>)
     }
