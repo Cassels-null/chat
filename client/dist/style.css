@@ -15,7 +15,7 @@ body{
     margin: auto;
     margin-top: 30px;
     border-radius: 15px !important;
-    /* padding: 10px; */
+    padding: 10px;
 }
 
 #wordBox{
@@ -59,12 +59,19 @@ body{
     /* padding-left: 20px; */
 }
 
+.timeStamp{
+    margin-left: 25px;
+    font-size: 50%;
+    /* color: white; */
+}
+
 #showUser{
     border-style: solid;
     border-width: 0px;
     border-bottom-width: 1px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    font-weight: bold;
 }
 
 #submit{
@@ -75,5 +82,5 @@ body{
 
 #textInput{
     /* padding: 10px; */
-    width: 99%;
+    width: 100%;
 }
