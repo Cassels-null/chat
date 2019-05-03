@@ -1,8 +1,13 @@
+body{
+    background-image: linear-gradient(to right, rgb(100, 108, 184), rgb(151, 203, 238));
+}
+
 #main{
     justify-content: center;
 }
 
 #chat{
+    background-color: rgba(0, 0, 0, 0.3);
     font-family: sans-serif;
     border-style: solid;
     max-width: 800px;
@@ -19,16 +24,39 @@
     overflow-y: auto;
 }
 
+.wrapper{
+    padding-top: 15px;
+}
+
 .message{
-    background-color: antiquewhite;
-    margin: 5px;
-    padding: 5px;
+    background-color: rgb(177, 223, 236);
+    /* color: white; */
+    margin-left: 20px;
+    padding: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
     font-size: 90%;
-    border-radius: 5px;
+    border-radius: 7px;
+    border-top-left-radius: 0px;
+    /* border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px; */
+    display: inline-block;
 }
 
 .userName{
+    background-color: rgb(132, 144, 250);
     font-weight: bold;
+    padding: 5px;
+    padding-bottom: 0px;
+    border-radius: 5px;
+    border-bottom-right-radius: 0px;
+    /* margin-top: 30px; */
+    /* font-family: serif; */
+    /* color: rgb(122, 122, 122) */
+}
+
+.text{
+    /* padding-left: 20px; */
 }
 
 #submit{

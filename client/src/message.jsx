@@ -12,9 +12,15 @@ class Message extends React.Component {
     }
 
     render(){
-        return(<div className="message">
-            <div className="userName">{this.props.message.userName}</div>
-            <div id="text">{this.props.message.text}</div>
+        return(
+        <div className="wrapper">
+        <span className="userName">{this.props.message.userName}</span>
+        <br/>
+        <div className="message">
+            {/* <br/> */}
+            <span className="text">{this.props.message.text}</span>
+        </div>
+        <br/>
         </div>)
     }
 };
