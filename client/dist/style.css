@@ -11,7 +11,6 @@ body{
     font-family: sans-serif;
     border-style: solid;
     max-width: 800px;
-    /* max-height: 600px; */
     margin: auto;
     margin-top: 30px;
     border-radius: 15px !important;
@@ -30,7 +29,6 @@ body{
 
 .message{
     background-color: rgb(177, 223, 236);
-    /* color: white; */
     margin-left: 20px;
     padding: 7px;
     padding-left: 10px;
@@ -38,21 +36,15 @@ body{
     font-size: 90%;
     border-radius: 7px;
     border-top-left-radius: 0px;
-    /* border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px; */
     display: inline-block;
 }
 
 .userName{
-    /* background-color: rgb(132, 144, 250); */
     font-weight: bold;
     padding: 5px;
     padding-bottom: 0px;
     border-radius: 5px;
     border-bottom-right-radius: 0px;
-    /* margin-top: 30px; */
-    /* font-family: serif; */
-    /* color: rgb(122, 122, 122) */
 }
 
 .text{
@@ -62,7 +54,6 @@ body{
 .timeStamp{
     margin-left: 25px;
     font-size: 50%;
-    /* color: white; */
 }
 
 #showUser{
@@ -75,12 +66,16 @@ body{
 }
 
 #submit{
-    /* border-style: solid; */
     padding: 5px;
     padding-right: 15px;
 }
 
 #textInput{
-    /* padding: 10px; */
     width: 100%;
+}
+
+#signIn{
+    margin: auto;
+    margin-top: 60px;
+    max-width: 200px;
 }

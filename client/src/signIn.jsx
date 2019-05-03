@@ -15,7 +15,7 @@ class SignIn extends React.Component {
                 e.preventDefault(); 
                 this.props.changeUserName(document.getElementById("nameInput").value);
             }}>
-                <input id="nameInput" type="text" placeholder="What's your name?" autoFocus/>
+                <input id="nameInput" type="text" placeholder="Enter a username" autoFocus/>
             </form>
         </div>)
     }
