@@ -14,17 +14,20 @@ class Message extends React.Component {
 
     render(){
         var colorHash = new ColorHash();
+        var date = new Date(this.props.message.time);
         return(
         <div className="wrapper">
-        <span className="userName"
-        style={{'background-color': colorHash.hex(this.props.message.userName)}}
-        >{this.props.message.userName}</span>
-        <br/>
-        <div className="message">
-            {/* <br/> */}
-            <span className="text">{this.props.message.text}</span>
-        </div>
-        <br/>
+            <span className="userName"
+            style={{'background-color': colorHash.hex(this.props.message.userName)}}
+            >{this.props.message.userName}</span>
+
+            <br/>
+            <div className="message">
+                {/* <br/> */}
+                <span className="text">{this.props.message.text}</span>
+            </div>
+            <div className="timeStamp">{date.getMonth()}/{date.getDate()} {date.getHours()}:{date.getMinutes()}</div>
+            <br/>
         </div>)
     }
 };
