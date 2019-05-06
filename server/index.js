@@ -6,7 +6,7 @@ const scribe = require('./scribe.js');
 const app = express();
 const port = 1337;
 
-//app.use(express.static(__dirname+'/../client/dist'));
+app.use(express.static(__dirname+'/../client/dist'));
 
 app.listen(port, () => console.log(`listening on port ${port}!`));
 app.use(parser.json());
