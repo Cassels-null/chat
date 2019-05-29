@@ -1505,7 +1505,7 @@ function (_React$Component) {
     value: function update() {
       var _this2 = this;
 
-      __WEBPACK_IMPORTED_MODULE_2_axios___default.a.get("http://18.212.59.193/read").then(function (result) {
+      __WEBPACK_IMPORTED_MODULE_2_axios___default.a.get("http://127.0.0.1:1337/read").then(function (result) {
         _this2.setState({
           messages: result.data
         });
@@ -27254,7 +27254,7 @@ function (_React$Component) {
         className: "text"
       }, this.props.message.text)), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
         className: "timeStamp"
-      }, date.getMonth(), "/", date.getDate(), " ", date.getHours(), ":", date.getMinutes()), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", null));
+      }, date.getMonth() + 1, "/", date.getDate(), " ", date.getHours(), ":", date.getMinutes()), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", null));
     }
   }]);
 
@@ -27344,7 +27344,7 @@ function (_React$Component) {
     key: "makePost",
     value: function makePost() {
       //post message to server
-      __WEBPACK_IMPORTED_MODULE_1_axios___default.a.post("http://18.212.59.193/record", {
+      __WEBPACK_IMPORTED_MODULE_1_axios___default.a.post("http://127.0.0.1:1337/record", {
         text: document.getElementById("textInput").value,
         userName: this.props.userName
       }).then(function (result) {
