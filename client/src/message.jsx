@@ -30,7 +30,7 @@ class Message extends React.Component {
             </div>
             {/* display timestamp in "mm/dd hr:min" format */}
             <div className="timeStamp">
-                {date.getMonth()}/{date.getDate()} {date.getHours()}:{date.getMinutes()}
+                {date.getMonth() + 1}/{date.getDate()} {date.getHours()}:{date.getMinutes()}
             </div>
             <br/>
         </div>)
