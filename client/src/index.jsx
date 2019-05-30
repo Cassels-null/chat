@@ -27,7 +27,7 @@ class App extends React.Component {
 
     //get messages from server and sets them to state
     update(){
-        axios.get("http://18.212.59.193/read")
+        axios.get("http://127.0.0.1:1337/read")
         .then((result)=>{this.setState({messages : result.data})})
         .catch((err)=>{console.log(err)});
         setTimeout(()=>{this.update()},200);//check for new messages every .2 seconds

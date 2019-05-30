@@ -11,7 +11,7 @@ class Submit extends React.Component {
     //post message and username to server
     makePost(){
         //post message to server
-        axios.post("http://18.212.59.193/record", {
+        axios.post("http://127.0.0.1:1337/record", {
             text: document.getElementById("textInput").value, 
             userName: this.props.userName
         })
